@@ -21,9 +21,11 @@
 #include "utils/Placeholder.h"
 static Placeholder<OneWireNg_CurrentPlatform> _ow;
 
+// the following lines and info is if you want to use a 
+// different Wire than default
 // must be named this for the ArduinoECCX08 library to work, 
 // also must modify ECCX08.cpp to not define a variable with this name
-ECCX08Class ECCX08(Wire, (uint8_t)0x60); 
+//ECCX08Class ECCX08(Wire, (uint8_t)0x60); 
 
 
 void setup() {
